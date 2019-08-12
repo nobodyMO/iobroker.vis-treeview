@@ -12,3 +12,4 @@
 
 var gentlyCopy = require('gently-copy')
 gentlyCopy('node_modules/jquery.fancytree/dist', 'widgets/treeview/js/fancytree');
+gentlyCopy('../jquery.fancytree/dist', 'widgets/treeview/js/fancytree');
