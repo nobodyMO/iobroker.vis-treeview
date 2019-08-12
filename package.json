@@ -29,7 +29,7 @@
   "main": "widgets/treeview.html",
   "name": "iobroker.vis-treeview",
   "scripts": {
-    "postinstall": "./postinstall.sh",
+    "postinstall": "node ./post-install.js",
     "test:package": "mocha test/package --exit",
     "test": "npm run test:package"
   },
