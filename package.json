@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "jquery.fancytree": "^2.31.0",
-    "gently-copy":"^3.2.0"
+    "ncp":"^2.0.0"
   },
   "devDependencies": {
     "@iobroker/testing": "^1.2.0",
