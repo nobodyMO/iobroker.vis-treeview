@@ -23,5 +23,5 @@ ncp((fs.existsSync('node_modules/jquery.fancytree/dist')?'node_modules/jquery.fa
     if (err) {
         return console.error(err);
     }
-    console.log('Copied fancytree files!'
+    console.log('Copied fancytree files!');
 });
