@@ -24,7 +24,8 @@
     "@types/gulp": "^4.0.6",
     "axios": "^0.18.0",
     "gulp": "^4.0.2",
-    "jquery.fancytree": "^2.31.0"
+    "jquery.fancytree": "^2.31.0",
+    "gently-copy":"^3.2.0"
   },
   "main": "widgets/treeview.html",
   "name": "iobroker.vis-treeview",
