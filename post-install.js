@@ -10,7 +10,7 @@
 
 'use strict'
 
-var gentlyCopy = require('gently-copy');
+var ncp = require('ncp');
 var fs = require('fs');
 if (!fs.existsSync('widgets/treeview/js')){
     fs.mkdirSync('widgets/treeview/js');
