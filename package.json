@@ -1,0 +1,41 @@
+{
+  "name": "iobroker.vis-treeview",
+  "version": "0.0.1",
+  "description": "The package contains a VIS widget to show a treeview based on fancytree",
+  "author": {
+    "name": "Markus Korporal",
+    "email": "markus@korporal.de"
+  },
+  "homepage": "https://github.com/nobodyMO/ioBroker.vis-treeview",
+  "license": "MIT",
+  "keywords": [
+    "ioBroker",
+    "treeview",
+    "Smart Home",
+    "home automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nobodyMO/ioBroker.vis-treeview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@iobroker/testing": "^1.2.0",
+    "@types/gulp": "^4.0.6",
+    "axios": "^0.18.0",
+    "gulp": "^4.0.2",
+    "jquery.fancytree": "^2.31.0"
+  },
+  "main": "widgets/treeview.html",
+  "name": "iobroker.vis-treeview",
+  "scripts": {
+    "postinstall": "./postinstall.sh",
+    "test:package": "mocha test/package --exit",
+    "test": "npm run test:package"
+  },
+  "bugs": {
+    "url": "https://github.com/nobodyMO/ioBroker.vis-treeview/issues"
+  },
+  "readmeFilename": "README.md"
+  
+}
