@@ -1,0 +1,54 @@
+<!--
+    ioBroker.vis treeview Widget-Set
+    version: "0.0.1"
+ 
+    Copyright 2019 nobodyMO markus@korporal.de
+-->
+<!-- here you can include so many css as you want -->
+<link href="widgets/treeview/js/fancytree/dist/skin-win7/ui.fancytree.css" rel="stylesheet" type="text/css">
+
+<!-- here you can include so many js-files as you want -->
+<script src="widgets/treeview/js/fancytree/dist/jquery.fancytree-all-deps.js" type="text/javascript"></script>
+
+<script id="tplTreeview"
+        type="text/ejs"
+        class="vis-tpl"
+        data-vis-prev='<img src="widgets/treeview/img/treeview.png">'
+        data-vis-attrs="oid"		
+        data-vis-set="Treeview"
+        data-vis-type="val" 
+        data-vis-name="Treeview"
+		data-vis-update-style="true"
+		>
+		<div class="vis-widget <%== this.data.attr('class') %>" id="<%= this.data.attr('wid') %>"
+		data-oid="<%=  this.data.attr('oid') %>"
+		>
+      <%		  
+			var powerstate=vis.states.attr(this.data.powerstate + '.val');
+			console.log ("powerstate Obj:" + JSON.stringify (vis.states.attr(this.data.powerstateoid + '.val')));
+			console.log ("powerstate (" + this.data.powerstateoid + "):" + powerstate);
+		  
+			vis.binds.treeview = {
+				createWidget: function (widgetID, view, data, style) {     
+					var fbobj=this;					
+					var $div = $('#' + widgetID);
+					// if nothing found => wait
+					if (!$div.length) {
+						return setTimeout(function () {
+							fbobj.createWidget(widgetID, view, data, style);
+						}, 100);
+					}
+          $div.html(vis.states.attr(data.oid + '.val'));
+          $div.fancytree();
+          if (data.oid) {
+				      vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+							    $div.html(newVal);
+  						});					
+					}				
+				}
+			};
+			
+            vis.binds.treeview.createWidget(this.data.wid, this.view, this.data, this.style);						
+          %>		  
+		</div>	
+</script>
