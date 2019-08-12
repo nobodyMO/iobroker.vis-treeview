@@ -18,14 +18,15 @@
     "type": "git",
     "url": "https://github.com/nobodyMO/ioBroker.vis-treeview"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jquery.fancytree": "^2.31.0",
+    "gently-copy":"^3.2.0"
+  },
   "devDependencies": {
     "@iobroker/testing": "^1.2.0",
     "@types/gulp": "^4.0.6",
     "axios": "^0.18.0",
-    "gulp": "^4.0.2",
-    "jquery.fancytree": "^2.31.0",
-    "gently-copy":"^3.2.0"
+    "gulp": "^4.0.2"
   },
   "main": "widgets/treeview.html",
   "name": "iobroker.vis-treeview",
