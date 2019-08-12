@@ -19,8 +19,6 @@
     "url": "https://github.com/nobodyMO/ioBroker.vis-treeview"
   },
   "dependencies": {
-    "jquery.fancytree": "^2.31.0",
-    "ncp":"^2.0.0"
   },
   "devDependencies": {
     "@iobroker/testing": "^1.2.0",
@@ -31,7 +29,6 @@
   "main": "widgets/treeview.html",
   "name": "iobroker.vis-treeview",
   "scripts": {
-    "postinstall": "node ./post-install.js",
     "test:package": "mocha test/package --exit",
     "test": "npm run test:package"
   },
