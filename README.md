@@ -2,7 +2,7 @@
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.vis-treeview.svg)](https://www.npmjs.com/package/iobroker.vis-treeview)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.vis-treeview.svg)](https://www.npmjs.com/package/iobroker.vis-treeview)
-[![Dependency Status](https://img.shields.io/david/nobodyMO/iobroker.vis-treeview.svg)](https://david-dm.org/Author/iobroker.vis-treeview)
+[![Dependency Status](https://img.shields.io/david/nobodyMO/iobroker.vis-treeview.svg)](https://david-dm.org/nobodyMO/iobroker.vis-treeview)
 [![Known Vulnerabilities](https://snyk.io/test/github/nobodyMO/ioBroker.vis-treeview/badge.svg)](https://snyk.io/test/github/nobodyMO/ioBroker.vis-treeview)
 
 [![NPM](https://nodei.co/npm/iobroker.vis-treeview.png?downloads=true)](https://nodei.co/npm/iobroker.vis-treeview/)
