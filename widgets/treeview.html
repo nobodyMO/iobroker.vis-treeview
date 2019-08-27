@@ -38,9 +38,10 @@
 					source:(typeof vis.states.attr(data.oid + '.val')=="string"?JSON.parse (vis.states.attr(data.oid + '.val')):vis.states.attr(data.oid + '.val')) 
 				
 				});
+				
 				if (data.oid) {
 					vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
-						$innerdiv.fancytree("getTree").reload((typeof newVal=="string"?JSON.parse (newVal):newVal));
+						if ($innerdiv.fancytree && $innerdiv.hasClass("ui-dialog-content")) $innerdiv.fancytree("getTree").reload((typeof newVal=="string"?JSON.parse (newVal):newVal));
 					});					
 				}				
 			}
